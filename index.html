@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" href="./styles.css">
-        
-    </head> 
-    <body>
-        <div class="container">
-            <div >
-                <h1 class = "header_text">Do you wanna go out with me?</h1>
-                <h1 class = "header_text">Are you free tommorow?</h1>
-            </div>
-            <div class="gif_container">
-                <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2ZldGhobW90a2tuejJmOWowYWFld2ZyYnNtYnMzZHIzdjhjaTh6MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/J509hr2j0oMejwlKOS/giphy.gif" alt="Cute animated illustration">
-            </div>
-            <div class = "buttons">
-                <button class="btn" id = "yesButton" onclick="nextPage()">Yes</button>
-                <button class="btn" id="noButton" onmouseover="moveButton()" onclick="moveButton()">No</button>
-                <script>
-                    function nextPage() {
-                        window.location.href = "yes.html";
-                    }
-                    
-                    function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth) - 85;
-                        var y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight) - 48;
-                        document.getElementById('noButton').style.left = `${x}px`;
-                        document.getElementById('noButton').style.top = `${y}px`;
-                    }
-                </script> 
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>annica nicole "with high honors" ferrer roque, my baby honey my laloves saur sweet, will you be my valentine?</h1>
+        <div class="buttons">
+            <button class="yes-button" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" onclick="handleNoClick()">No</button>
         </div>
-       
-    </body> 
+        <div class="gif_container">
+            <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExbW5lenZyZHI5OXM2eW95b3pmMG40cWVrMDhtNjVuM3A4dGNxa2g2dSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/VM1fcpu2bKs1e2Kdbj/giphy.gif" alt="Cute GIF">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
